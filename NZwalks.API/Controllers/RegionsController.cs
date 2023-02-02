@@ -47,8 +47,8 @@ namespace NZwalks.API.Controllers
 
             var regionsDTO = mapper.Map <List<Model.DTO.Region >> (regions);
 
-            return Ok(regions);
-        }
+           return Ok(regions);
+       }
 
         [HttpGet]
         [Route("{id:guid}")]
@@ -133,7 +133,7 @@ namespace NZwalks.API.Controllers
 
         }
         [HttpPut]
-        [Route("id:guid")]
+        [Route("{id:guid}")]
 
         public async Task<IActionResult> UpdateRegionAsync([FromRoute] Guid id, [FromBody] Model.DTO.UpdateRegionRequest updateRegionRequest )
         {
