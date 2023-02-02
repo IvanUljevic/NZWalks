@@ -1,17 +1,12 @@
-﻿namespace NZwalks.API.Model.Domain
+﻿namespace NZwalks.API.Model.DTO
 {
-    public class Region
+    public class UpdateRegionRequest
     {
-        public Guid Id { get; set; }
         public string Code { get; set; }
         public string Name { get; set; }
         public double Area { get; set; }
         public double Lat { get; set; }
         public double Long { get; set; }
         public double Population { get; set; }
-
-        // navigation property
-
-        public IEnumerable<Walk> Walks { get; set; } 
     }
 }
