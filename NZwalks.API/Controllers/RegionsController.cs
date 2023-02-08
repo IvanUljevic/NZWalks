@@ -7,15 +7,15 @@ using System.Collections.Generic;
 namespace NZwalks.API.Controllers
 {
     [ApiController]
-    [Route("Regions")]
+    [Route("Region")]
 
-    public class RegionsController : Controller
+    public class RegionController : Controller
     {
         private readonly IRegionRepository regionsRepository;
         private readonly IMapper mapper;
 
 
-        public RegionsController(IRegionRepository regionsRepository, IMapper mapper)
+        public RegionController(IRegionRepository regionsRepository, IMapper mapper)
         {
             this.regionsRepository = regionsRepository;
             this.mapper = mapper;
